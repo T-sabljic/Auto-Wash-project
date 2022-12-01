@@ -1,0 +1,54 @@
+@mixin flex($justify: center, $align: center, $direction: row, $wrap: nowrap, $gap: 16px) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+    gap: $gap;
+}
+
+@mixin btn($bg, $color, $bg1, $color1){
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: $transition-in;
+    letter-spacing: 1px;
+    border: none;
+    background-color: $bg;
+    color: $color;
+    display: inline-block;
+
+    &:hover{
+        transition: $transition-out;
+        background-color: $bg1;
+        color: $color1;
+    }
+    @media(max-width:576px){
+        font-size: 0.9rem;
+        padding: 10px 20px;
+    }
+}
+
+/*.whiteBtn{
+    background-color: $whiteColor;
+    border: none;
+    color: $primaryColor;
+
+    &:hover{
+        background-color: $secondaryColor;
+        color: $whiteColor;
+    }
+}*/
+
+@mixin iconBox($width, $height, $lineHeight, $borderRadius, $bg, $color ) {
+    width: $width;
+    height: $height;
+    line-height: $lineHeight;
+    border-radius: $borderRadius;
+    background-color: $bg;
+    color:$color;
+    text-align: center;
+}

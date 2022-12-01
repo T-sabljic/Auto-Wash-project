@@ -1,0 +1,31 @@
+.testimonial{
+
+    &-wrapper{
+        margin-top: 2rem;
+        
+
+        .testimonial-item{
+            @include flex(flex-start, center, row, nowrap, 1rem);
+            // flex: 0 0 34%;
+            border: 2px solid red;
+
+            img{
+                width: 6rem;
+                height: 6rem;
+                border-radius: 50%;
+            }
+
+            /*.user-info{
+                h3{
+                    @include title(1.2rem, $primaryColor, 0, 1,2rem);
+                }
+
+                h4{
+                    font-weight: 400;
+                    font-style: italic;
+                    font-size: 0.9rem;
+                }
+            }*/
+        }
+    }
+}

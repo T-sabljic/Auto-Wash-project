@@ -1,0 +1,130 @@
+/*******************
+CONTACT SECTION
+********************/
+
+.contact{
+
+    &-wrapper{
+        @include flex(space-around, center, row, wrap);
+
+        article{
+            
+            &:first-child{
+
+                flex: 0 0 40%;
+
+                @media(max-width: 1100px){
+                    flex: 0 0 70%;
+                }
+                @media(max-width: 768px){
+                    flex: 0 0 90%;
+                }
+                @media(max-width: 576px){
+                    flex: 0 0 100%;
+                }
+                .section-subtitle{
+                    text-align: left;
+                    &::after{
+                        margin: 10px 0px 0px 0px ;
+                    }
+                }
+                .section-title {
+                   text-align: left;
+
+                   @media(max-width: 576px){
+                    font-size: 1.5rem;
+                }
+                }
+                .contact-info{
+                    @include flex(space-between, center, row, wrap);
+    
+                    &-item{
+                        flex: 0 0 40%;
+                        margin-top: 15px;
+                        display: flex;
+
+                        @media(max-width: 768px){
+                            flex: 0 0 100%;
+                        }
+    
+                        i{
+                          color: $secondaryColor;
+                          font-size: 1.7rem;
+                          margin-right: 15px;
+                        }
+                        div{
+                            h4{
+                                font-size: 1.2rem;
+                                color:$primaryColor;
+                                margin-bottom: 5px;
+
+                                @media(max-width: 576px){
+                                    font-size: 1.1rem;
+                                }
+                            }
+                        }
+                        p{
+                            span{
+                                font-weight: 700;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &:last-child{
+                flex: 0 0 30%;
+
+                @media(max-width: 1100px){
+                    flex: 0 0 60%;
+                    margin-top: 40px;
+                }
+
+                @media(max-width: 768px){
+                    flex: 0 0 80%;
+                }
+                @media(max-width: 576px){
+                    flex: 0 0 100%;
+                }
+                form{
+                    background-color: $secondaryColor;
+                    @include flex( center,flex-start, column);
+                    padding: 25px;
+    
+                    h3{
+                        font-size: 1.5rem;
+                        color: $whiteColor;
+                        margin-bottom: 15px;
+                        letter-spacing: 1px;
+
+                        @media(max-width: 576px){
+                            font-size: 1.2rem;
+                        }
+                    }
+                    .form-component{
+                        border: 1px solid $whiteColor;
+                        background-color: transparent;
+                        border-radius: 5px;
+                        margin-bottom: 15px;
+                        width: 100%;
+                        padding: 15px;
+                        color: $whiteColor;
+
+                        @media(max-width: 576px){
+                            padding: 10px;
+                        }
+    
+                        &::placeholder{
+                            color: $whiteColor;
+    
+                        }
+                    }
+                    button[type="submit"]{
+                        @include btn($whiteColor, $secondaryColor, $primaryColor, $whiteColor);
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

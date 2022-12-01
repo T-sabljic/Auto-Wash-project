@@ -1,0 +1,79 @@
+/*****************
+TEAM SECTION
+******************/
+.team{
+
+    &-wrapper{
+        @include flex(space-around, center,row, wrap);
+
+        article{
+            flex: 0 0 22%;
+            margin-top: 20px;
+
+            @media(max-width:1100px){
+                flex: 0 0 40%;
+            }
+            @media(max-width:768px){
+                flex: 0 0 70%;
+            }
+            @media(max-width:576px){
+                flex: 0 0 90%;
+            }
+
+            &:hover>.team-info{
+                background-color: $secondaryColor;
+                transition: $transition-out;
+            }
+            &:hover img{
+                transform: scale(1.2);
+                transition: $transition-out;
+            }
+            &:hover .team-social>a{
+                background-color: $secondaryColor !important;
+                transition: $transition-out;
+            }
+            .team-img{
+                overflow: hidden;
+
+                img{
+                    transition: $transition-in;
+                }
+            }
+            .team-info{
+                background-color: $primaryColor;
+                padding: 25px;
+                text-align: center;
+                transition: $transition-in;
+                position: relative;
+                h4{
+                    color: $whiteColor;
+                    font-size: 1.3rem;
+
+                    @media(max-width:576px){
+                        font-size: 1rem;
+                    }
+                }
+                p{
+                    color: $whiteColor;
+                }
+                .team-social{
+                    position: absolute;
+                    top:-15px ;
+                    right: 0;
+                    left: 0;
+
+                    a{
+
+                        @include iconBox(40px, 40px, 40px, 40px, $primaryColor, $whiteColor);
+                        margin-right: 10px;
+
+                        @media(max-width:576px){
+                           @include iconBox(30px, 30px, 30px, 30px, $primaryColor, $whiteColor);
+                            font-size: 0.9rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

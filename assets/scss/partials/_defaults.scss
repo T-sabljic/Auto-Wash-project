@@ -1,0 +1,128 @@
+
+/********************
+DEFAULT STYLES
+*********************/
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+html{
+    &::-webkit-scrollbar{
+        width: 15px;
+    }
+    &::-webkit-scrollbar-track{
+        background: transparent;
+    }
+    &::-webkit-scrollbar-thumb{
+        background-color: $primaryColor;
+    }
+}
+
+body{
+    font-family: 'Barlow', sans-serif;
+    color:#444444;
+    background-color:$whiteColor;
+    font-weight: 400;
+    line-height: 1.5;
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: 700;
+}
+a{
+  text-decoration: none;
+  transition: $transition-in;
+
+    &:hover{
+        transition: $transition-out;
+    }
+}
+ul{
+    list-style-type: none;
+}
+img{
+    width: 100%;
+    vertical-align: middle;
+    
+}
+p{
+    @media(max-width: 576px){
+        font-size: 0.9rem;
+    }
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+section{
+    padding: 70px 0px;
+}
+input,
+textarea{
+    outline: none;
+}
+
+.section-subtitle{
+    margin-bottom: 10px;
+    color: $secondaryColor;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing:4px;
+    padding-bottom: 5px;
+    text-align: center;
+
+    &::after{
+        background-color: $secondaryColor;
+        width: 80px;
+        height: 2px;
+        display: block;
+        content: "";
+        margin: 10px auto;
+    }
+}
+.section-title{
+    font-weight: 700;
+    text-transform: capitalize;
+    color: $primaryColor;
+    font-size: 2.2rem;
+    text-align: center;
+
+    @media(max-width: 768px){
+        font-size: 2rem;
+    }
+    @media(max-width: 576px){
+        font-size: 1.8rem;
+    }
+}
+
+// ARROW UP
+
+    .arrow-up{
+        position: fixed;
+        bottom: 15px;
+        right: 15px;
+        cursor: pointer;
+
+        @include iconBox(40px, 40px, 40px, 40px, $primaryColor, $whiteColor);
+
+        i{
+            font-size: 1.5rem;
+        }
+
+    }
+
+
+// ANIMATION
+
+@keyframes slideFromTop{
+    0%{
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(0%);
+        opacity: 1;
+    }
+}

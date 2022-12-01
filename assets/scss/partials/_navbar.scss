@@ -1,0 +1,167 @@
+/*******************
+  NAVBAR SECTION
+********************/
+nav{
+    background-color: $primaryColor;
+
+    @media(max-width:992px){
+     padding: 25px 0px;
+    }
+    @media(max-width:576px){
+        padding: 15px;
+    }
+    
+
+    .nav-content{
+        @include flex(space-between, center, row, wrap);
+        
+
+        .nav-brand{
+            display: none;
+            color: $whiteColor;
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            font-weight: 300;
+
+            @media(max-width:992px){
+                display: block;
+            }
+            @media(max-width:576px){
+                font-size: 1.2rem;
+            }
+            
+        }
+        ul{
+            display: flex;
+
+            @media(max-width:992px){
+                display: none;
+            }
+
+            li{
+                padding: 25px 0px;
+                &:not(:last-child){
+                margin-right: 15px;
+                }
+
+                a{
+                    color: $whiteColor;
+                    font-weight:500;
+
+                    &:hover{
+                        color: $secondaryColor;
+                    }
+                }
+
+                &.list-item-dropdown{
+                   
+                    position: relative;
+
+                    i{
+                        color: $whiteColor;
+                        margin-left: 5px;
+                        transition: $transition-in;
+                        cursor: pointer;
+                    }
+
+                    &:hover i{
+                        transition: $transition-out;
+                        color: $secondaryColor;
+                    }
+                    &:hover .dropdown{
+                        display: block;
+                    }
+
+                    .dropdown{
+                        background-color: $whiteColor;
+                        position: absolute;
+                        width: 120px;
+                        height: 150px;
+                        top: 60px;
+                        padding: 15px 0px 15px 15px;
+                        display: none;
+                        a{
+                            display: block;
+                            color: $primaryColor;
+                            padding-bottom: 10px;
+
+                            &:hover{
+                                color: $secondaryColor;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        button{
+            @include btn($whiteColor, $primaryColor, $secondaryColor, $whiteColor);
+            @media(max-width:992px){
+                display: none;
+            }
+        }
+        .hamburger{
+            width: 40px;
+            height: 40px;
+            border: 1px solid $whiteColor;
+            border-radius: 5px;
+            padding: 10px;
+            display: none;
+            cursor: pointer;
+
+            @media(max-width:992px){
+                display: block;
+            }
+            
+            &-top,
+            &-center,
+            &-bottom {
+                background-color: $whiteColor;
+                height: 2px;
+                width: 100%;
+                margin-top: 7px;
+            }
+            &-top{
+                margin-top: 0px;
+            }
+        }
+    }
+
+    .mobile-menu{
+        
+        &.hidden{
+            display: none;
+        }
+        ul{
+            li{
+                padding-bottom: 10px;
+
+                &.list-item-dropdown{
+                   
+                    i{
+                        color: $whiteColor;
+                        margin-left: 5px;
+                        transition: $transition-in;
+                        cursor: pointer;
+                    }
+
+                    &:hover i{
+                        transition: $transition-out;
+                        color: $secondaryColor;
+                    }
+                    .dropdown{
+                        display: none;
+
+                    }
+                }
+                a{
+                    color: $whiteColor;
+                    font-weight: 500;
+                    
+                    &:hover{
+                        color: $secondaryColor;
+                    }
+                }
+            }
+        }
+    }
+  }

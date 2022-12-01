@@ -1,0 +1,75 @@
+/*******************
+PRICE SECTION
+********************/
+
+.price{
+
+    .section-title{
+        margin-bottom: 20px;
+    }
+    &-wrapper{
+        @include flex(space-between, center, row, wrap);
+        
+        @media(max-width:1100px){
+            justify-content: center;
+        }
+        article{
+            
+            flex: 0 0 30%;
+            text-align: center;
+
+            @media(max-width:1100px){
+                flex:0 0 60%;
+                margin-bottom: 20px;
+            }
+            @media(max-width:576px){
+                flex:0 0 80%;
+            }
+            &:nth-child(2){
+              box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+              padding: 15px 0px;
+
+              h4{
+                color: $secondaryColor;
+              }
+              p{
+                color: $secondaryColor;
+              }
+              a{
+                @include btn($secondaryColor, $whiteColor, $primaryColor, $whiteColor);}
+            }
+            
+            h4{
+                color: $primaryColor;
+                font-size: 1.5rem;
+
+                @media(max-width:576px){
+                    font-size: 1.2rem;
+                }
+            }
+            p{
+                font-weight: 700;
+                font-size: 2rem;
+                color: $primaryColor;
+                margin: 10px 0px;
+                @media(max-width:576px){
+                    font-size: 1.4rem;
+                }
+            }
+            ul{
+                li{
+                    margin-bottom: 10px;
+
+                    i{
+                        color: $secondaryColor;
+                        margin-right: 10px;
+                    }
+                }
+            }
+            a{
+                @include btn($primaryColor, $whiteColor, $secondaryColor, $whiteColor);
+                margin-top: 10px;
+            }
+        }
+    }
+}

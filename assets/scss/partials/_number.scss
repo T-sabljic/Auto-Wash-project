@@ -1,0 +1,47 @@
+/*******************
+NUMBER SECTION
+********************/
+.number{
+    background-color: $primaryColor;
+
+    &-wrapper{
+        @include flex(space-between, center, row, wrap);
+        
+        @media(max-width:992px){
+            justify-content: center;
+        }
+        article{
+          flex-basis: 22%;
+          @include flex();
+          color: $whiteColor;
+
+          @media(max-width:992px){
+            flex-basis: 45%;
+            margin-top: 20px;
+           }
+           @media(max-width:768px){
+            flex-basis: 100%;
+            justify-content: flex-start;
+        }
+
+          i{
+              color: $secondaryColor;
+              font-size: 2rem;
+              margin-right: 15px;
+          }
+
+          .number-text{
+            h3{
+                font-size: 3rem;
+
+                @media(max-width:992px){
+                    font-size: 2rem;
+                }
+            }
+            p{
+                font-size: 1.1rem;
+            }
+          }
+        }
+    }
+}
