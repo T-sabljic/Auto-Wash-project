@@ -104,6 +104,7 @@ textarea{
         bottom: 15px;
         right: 15px;
         cursor: pointer;
+        border: 2px solid $whiteColor;
 
         @include iconBox(40px, 40px, 40px, 40px, $primaryColor, $whiteColor);
 
