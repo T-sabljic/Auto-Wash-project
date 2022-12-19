@@ -1,6 +1,4 @@
-/*******************
-  NAVBAR SECTION
-********************/
+
 nav{
     background-color: $primaryColor;
 
@@ -12,11 +10,11 @@ nav{
     }
     
 
-    .nav-content{
+    .nav__wrapper{
         @include flex(space-between, center, row, wrap);
         
 
-        .nav-brand{
+        .nav__menu{
             display: none;
             color: $whiteColor;
             font-size: 1.5rem;
@@ -31,20 +29,20 @@ nav{
             }
             
         }
-        ul{
+        .nav__list{
             display: flex;
 
             @media(max-width:992px){
                 display: none;
             }
 
-            li{
+            .nav__list__item{
                 padding: 25px 0px;
                 &:not(:last-child){
                 margin-right: 15px;
                 }
 
-                a{
+                .nav__list__links{
                     color: $whiteColor;
                     font-weight:500;
 
@@ -52,54 +50,55 @@ nav{
                         color: $secondaryColor;
                     }
                 }
+            }
 
-                &.list-item-dropdown{
-                   
-                    position: relative;
+            .nav__item__dropdown{
 
-                    i{
-                        color: $whiteColor;
-                        margin-left: 5px;
-                        transition: $transition-in;
-                        cursor: pointer;
-                    }
+                position: relative;
+                
+                i{
+                    color: $whiteColor;
+                    margin-left: 5px;
+                    cursor: pointer;
+                }
 
-                    &:hover i{
-                        transition: $transition-out;
-                        color: $secondaryColor;
-                    }
-                    &:hover .dropdown{
+                &:hover i{
+                    color: $secondaryColor;
+                }
+                &:hover .nav__dropdown{
+                    display: block;
+                }
+
+                .nav__dropdown{
+                    background-color: $whiteColor;
+                    position: absolute;
+                    width: 120px;
+                    height: 150px;
+                    top: 60px;
+                    padding: 15px 0px 15px 15px;
+                    display: none;
+
+                    .nav__dropdown__links{
                         display: block;
-                    }
+                        color: $primaryColor;
+                        padding-bottom: 10px;
 
-                    .dropdown{
-                        background-color: $whiteColor;
-                        position: absolute;
-                        width: 120px;
-                        height: 150px;
-                        top: 60px;
-                        padding: 15px 0px 15px 15px;
-                        display: none;
-                        a{
-                            display: block;
-                            color: $primaryColor;
-                            padding-bottom: 10px;
-
-                            &:hover{
-                                color: $secondaryColor;
-                            }
+                        &:hover{
+                            color: $secondaryColor;
                         }
                     }
                 }
             }
         }
-        button{
+        
+        .nav__btn{
             @include btn($whiteColor, $primaryColor, $secondaryColor, $whiteColor);
             @media(max-width:992px){
                 display: none;
             }
         }
-        .hamburger{
+        .nav__hamburger{
+
             width: 40px;
             height: 40px;
             border: 1px solid $whiteColor;
@@ -112,48 +111,45 @@ nav{
                 display: block;
             }
             
-            &-top,
-            &-center,
-            &-bottom {
+            .nav__hamburger__top,
+            .nav__hamburger__center,
+            .nav__hamburger__bottom {
                 background-color: $whiteColor;
                 height: 2px;
                 width: 100%;
                 margin-top: 7px;
             }
-            &-top{
+            .nav__hamburger__top{
                 margin-top: 0px;
             }
         }
     }
 
-    .mobile-menu{
+    .nav__mobileMenu{
         
         &.hidden{
             display: none;
         }
-        ul{
-            li{
+        .nav__mobileMenu__list{
+            .nav__mobileMenu__item{
                 padding-bottom: 10px;
 
-                &.list-item-dropdown{
+                &.nav__item__dropdown{
                    
                     i{
                         color: $whiteColor;
                         margin-left: 5px;
-                        transition: $transition-in;
                         cursor: pointer;
                     }
 
                     &:hover i{
-                        transition: $transition-out;
                         color: $secondaryColor;
                     }
-                    .dropdown{
+                    .nav__mobileMenu__dropdown{
                         display: none;
-
                     }
                 }
-                a{
+                .nav__mobileMenu__links{
                     color: $whiteColor;
                     font-weight: 500;
                     

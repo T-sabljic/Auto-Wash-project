@@ -3,10 +3,10 @@ TEAM SECTION
 ******************/
 .team{
 
-    &-wrapper{
+    &__wrapper{
         @include flex(space-around, center,row, wrap);
 
-        article{
+        .team__item{
             flex: 0 0 22%;
             margin-top: 20px;
 
@@ -20,32 +20,25 @@ TEAM SECTION
                 flex: 0 0 90%;
             }
 
-            &:hover>.team-info{
+            &:hover>.team__info{
                 background-color: $secondaryColor;
                 transition: $transition-out;
             }
             &:hover img{
                 transform: scale(1.2);
-                transition: $transition-out;
             }
-            &:hover .team-social>a{
+            &:hover .team__social>a{
                 background-color: $secondaryColor !important;
-                transition: $transition-out;
             }
-            .team-img{
+            .team__img{
                 overflow: hidden;
-
-                img{
-                    transition: $transition-in;
-                }
             }
-            .team-info{
+            .team__info{
                 background-color: $primaryColor;
                 padding: 25px;
                 text-align: center;
-                transition: $transition-in;
                 position: relative;
-                h4{
+                .team__h4{
                     color: $whiteColor;
                     font-size: 1.3rem;
 
@@ -53,10 +46,10 @@ TEAM SECTION
                         font-size: 1rem;
                     }
                 }
-                p{
+                .team__p{
                     color: $whiteColor;
                 }
-                .team-social{
+                .team__social{
                     position: absolute;
                     top:-15px ;
                     right: 0;

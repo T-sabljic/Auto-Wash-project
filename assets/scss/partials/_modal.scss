@@ -1,6 +1,4 @@
-/****************
-MODAL SECTION
-*****************/
+
 .modal{
     position: fixed;
     top: 0;
@@ -10,7 +8,7 @@ MODAL SECTION
     height: 100%;
     display: none;
 
-    &-box{
+    &__box{
         position: absolute;
         top: 50%;
         left: 50%;
@@ -19,12 +17,12 @@ MODAL SECTION
         width: 400px;
         border-radius: 10px;
         
-        .modal-title{
+        .modal__title{
             background-color: $primaryColor;
             padding: 15px;
             @include flex(space-between);
 
-            h3{
+            .modal__h3{
                 color: $whiteColor;
                 font-size: 1.4rem;
             }
@@ -35,19 +33,19 @@ MODAL SECTION
             }
         }
 
-        .modal-body{
+        .modal__body{
             padding: 15px;
 
-            form{
+            .modal__form{
                 display: flex;
                 flex-direction: column;
 
-                .modal-input{
+                .modal__input{
                     padding: 10px;
                     margin-bottom: 15px
                 }
                 
-                input[type="submit"]{
+                .modal__button{
                     @include btn($primaryColor, $whiteColor, $secondaryColor, $whiteColor);
                     border-radius: 0;
 
@@ -56,12 +54,13 @@ MODAL SECTION
         }
     }
 
-    .modal-footer{
+    .modal__footer{
         text-align: center;
         margin-bottom: 15px;
 
-        p{
-            a{
+        .modal__footer__p{
+            
+            .modal__footer__link{
                 color: $primaryColor;
                 font-weight: 700;
     

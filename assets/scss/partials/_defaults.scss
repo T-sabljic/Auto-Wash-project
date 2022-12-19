@@ -1,13 +1,13 @@
 
-/********************
-DEFAULT STYLES
-*********************/
-
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
+    text-decoration: none;
+    transition: all 0.5s;
+    list-style-type: none;
+    outline: none;
 }
 html{
     &::-webkit-scrollbar{
@@ -24,44 +24,38 @@ html{
 body{
     font-family: 'Barlow', sans-serif;
     color:#444444;
-    background-color:$whiteColor;
-    font-weight: 400;
     line-height: 1.5;
-}
-h1,h2,h3,h4,h5,h6{
-    font-weight: 700;
-}
-a{
-  text-decoration: none;
-  transition: $transition-in;
+    //1.5 x 16px = 24px
+    font-size: 100%;
+    // 16px
 
-    &:hover{
-        transition: $transition-out;
+    @media(max-width: 576px){
+       font-size: 75%;
+        // 12px
     }
 }
-ul{
-    list-style-type: none;
+h1,h2,h3,h4,h5,h6{
+    text-transform: capitalize;
+    // DEFAULT VALUE FOR font-weight PROPERTY :700
 }
+
 img{
     width: 100%;
     vertical-align: middle;
-    
+    object-fit: cover;
+    // BACKGROUND SIZE-COVER (CSS) = object-fit- cover (HTML)
 }
-p{
-    @media(max-width: 576px){
-        font-size: 0.9rem;
-    }
-}
+
 .container{
     width: 80%;
     margin: auto;
+
+    @media(max-width: 576px){
+       width: 90%;
+     }
 }
 section{
     padding: 70px 0px;
-}
-input,
-textarea{
-    outline: none;
 }
 
 .section-subtitle{

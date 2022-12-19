@@ -1,6 +1,4 @@
-/*******************
-TOP NAVBAR SECTION
-********************/
+
 .top-navbar{
     background-color: $whiteColor;
     @include flex(space-around);
@@ -8,14 +6,16 @@ TOP NAVBAR SECTION
     animation-name: slideFromTop;
     animation-duration: 1.5s;
     
-    a{
+    &__logo{
         font-weight: 700;
-        h1{
+
+        .top-navbar__heading{
             font-size: 2.7rem;
             color: $secondaryColor;
             font-style: italic;
             font-weight: 800;
-            span{
+            
+            .top-navbar__span{
                 color: $primaryColor;
             }
 
@@ -24,10 +24,15 @@ TOP NAVBAR SECTION
             }
         }
     }
-    .top-navbar-info{
+    
+    &__info{
       display: flex;
+
+      @media(max-width:1200px){
+        display: none;
+      }
       
-      .info-item{
+      .top-navbar__item{
         @include flex(flex-start);
         //FLEX CONTAINER
         //FLEX ITEM
@@ -47,8 +52,6 @@ TOP NAVBAR SECTION
         }
       }
 
-      @media(max-width:1200px){
-        display: none;
-      }
+      
     }
 }

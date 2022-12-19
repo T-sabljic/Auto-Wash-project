@@ -1,5 +1,5 @@
-let hamburger = document.querySelector(".hamburger");
-let mobileMenu = document.querySelector(".mobile-menu");
+let hamburger = document.querySelector(".nav__hamburger");
+let mobileMenu = document.querySelector(".nav__mobileMenu");
 
 hamburger.addEventListener("click", function(){
     mobileMenu.classList.toggle("hidden");

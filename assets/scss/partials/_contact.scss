@@ -1,27 +1,26 @@
-/*******************
-CONTACT SECTION
-********************/
+
 
 .contact{
 
-    &-wrapper{
-        @include flex(space-around, center, row, wrap);
+    &__wrapper{
+        @include flex(space-between, center, row, wrap);
 
-        article{
-            
+        @media(max-width: 1200px){
+            justify-content: center;
+        }
+        .contact__item{
+
             &:first-child{
 
-                flex: 0 0 40%;
+                flex: 0 0 45%;
+                @media(max-width: 1200px){
+                    flex: 0 0 80%;
+                }
 
-                @media(max-width: 1100px){
-                    flex: 0 0 70%;
-                }
                 @media(max-width: 768px){
-                    flex: 0 0 90%;
-                }
-                @media(max-width: 576px){
                     flex: 0 0 100%;
                 }
+
                 .section-subtitle{
                     text-align: left;
                     &::after{
@@ -35,10 +34,10 @@ CONTACT SECTION
                     font-size: 1.5rem;
                 }
                 }
-                .contact-info{
+                .contact__info{
                     @include flex(space-between, center, row, wrap);
     
-                    &-item{
+                    &__item{
                         flex: 0 0 40%;
                         margin-top: 15px;
                         display: flex;
@@ -52,8 +51,10 @@ CONTACT SECTION
                           font-size: 1.7rem;
                           margin-right: 15px;
                         }
-                        div{
-                            h4{
+                        
+                        .contact__data{
+                            
+                            .contact__h4{
                                 font-size: 1.2rem;
                                 color:$primaryColor;
                                 margin-bottom: 5px;
@@ -63,8 +64,8 @@ CONTACT SECTION
                                 }
                             }
                         }
-                        p{
-                            span{
+                        .contact__p{
+                            .contact__span{
                                 font-weight: 700;
                             }
                         }
@@ -73,25 +74,23 @@ CONTACT SECTION
             }
 
             &:last-child{
-                flex: 0 0 30%;
 
-                @media(max-width: 1100px){
-                    flex: 0 0 60%;
+                flex: 0 0 45%;
+                @media(max-width: 1200px){
+                    flex: 0 0 70%;
                     margin-top: 40px;
                 }
 
                 @media(max-width: 768px){
-                    flex: 0 0 80%;
-                }
-                @media(max-width: 576px){
                     flex: 0 0 100%;
                 }
-                form{
+        
+                .contact__form{
                     background-color: $secondaryColor;
                     @include flex( center,flex-start, column);
                     padding: 25px;
     
-                    h3{
+                    .contact__form__h3{
                         font-size: 1.5rem;
                         color: $whiteColor;
                         margin-bottom: 15px;
@@ -101,7 +100,7 @@ CONTACT SECTION
                             font-size: 1.2rem;
                         }
                     }
-                    .form-component{
+                    .contact__component{
                         border: 1px solid $whiteColor;
                         background-color: transparent;
                         border-radius: 5px;
@@ -119,7 +118,7 @@ CONTACT SECTION
     
                         }
                     }
-                    button[type="submit"]{
+                    .contact__btn{
                         @include btn($whiteColor, $secondaryColor, $primaryColor, $whiteColor);
                         width: 100%;
                     }

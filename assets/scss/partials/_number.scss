@@ -1,16 +1,14 @@
-/*******************
-NUMBER SECTION
-********************/
+
 .number{
     background-color: $primaryColor;
 
-    &-wrapper{
+    &__wrapper{
         @include flex(space-between, center, row, wrap);
         
         @media(max-width:992px){
             justify-content: center;
         }
-        article{
+        .number__item{
           flex-basis: 22%;
           @include flex();
           color: $whiteColor;
@@ -30,16 +28,14 @@ NUMBER SECTION
               margin-right: 15px;
           }
 
-          .number-text{
-            h3{
+          .number__text{
+
+            .number__h3{
                 font-size: 3rem;
 
                 @media(max-width:992px){
                     font-size: 2rem;
                 }
-            }
-            p{
-                font-size: 1.1rem;
             }
           }
         }

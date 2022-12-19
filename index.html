@@ -20,36 +20,39 @@
 <!----------Swiper CDN Link-------->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
 
+<!--------Favicon icon--------->
+<link rel="stylesheet" href="assets/img/single.jpg">
+
 </head>
 <body>
     
     <!-----------Top Navbar section--------->
 
         <div class="top-navbar container">
-           <a href="index.html">
-              <h1>Auto<span>Wash</span></h1>
+           <a href="index.html" class="top-navbar__logo">
+              <h1 class="top-navbar__heading">Auto<span class="top-navbar__span">Wash</span></h1>
            </a>
-           <div class="top-navbar-info">
+           <div class="top-navbar__info">
 
-               <div class="info-item">
+               <div class="top-navbar__item">
                   <i class="far fa-clock"></i>
-                  <div class="info-item1">
-                       <h3>Opening hours</h3>
-                       <p>Mon-Fri, 8:00 - 9:00</p>
+                  <div class="top-navbar__text">
+                       <h3 class="top-navbar__h3">Opening hours</h3>
+                       <p class="top_navbar__p">Mon-Fri, 8:00 - 9:00</p>
                   </div>
                </div>
-               <div class="info-item">
+               <div class="top-navbar__item">
                   <i class="fa fa-phone-alt"></i>
-                  <div class="info-item1">
-                       <h3>Call Us</h3>
-                       <p>+41 714938399</p>
+                  <div class="top-navbar__text">
+                       <h3 class="top-navbar__h3">Call Us</h3>
+                       <p class="top_navbar__p">+41 714938399</p>
                   </div>
                </div>
-               <div class="info-item">
+               <div class="top-navbar__item">
                   <i class="far fa-envelope"></i>
-                  <div class="info-item1">
-                       <h3>Email Us</h3>
-                       <p>car_wash@gamil.com</p>
+                  <div class="top-navbar__text">
+                       <h3 class="top-navbar__h3">Email Us</h3>
+                       <p class="top_navbar__p">car_wash@gamil.com</p>
                   </div>
                </div>
            </div>
@@ -60,52 +63,52 @@
 
     <!-------- Navbar section-------->
 
-      <nav>
-        <div class="nav-content container">
-            <a href="#" class="nav-brand">Menu</a>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#number">Number</a></li>
-                <li><a href="#price">Price</a></li>
-                <li><a href="#team">Team</a></li>
-                <li class="list-item-dropdown">
-                    <a href="#">Pages</a>
+      <nav class="nav">
+        <div class="nav__wrapper container">
+            <a href="#" class="nav__menu">Menu</a>
+            <ul class="nav__list">
+                <li class="nav__list__item"><a href="index.html" class="nav__list__links">Home</a></li>
+                <li class="nav__list__item"><a href="#about" class="nav__list__links">About</a></li>
+                <li class="nav__list__item"><a href="#number" class="nav__list__links">Number</a></li>
+                <li class="nav__list__item"><a href="#price" class="nav__list__links">Price</a></li>
+                <li class="nav__list__item"><a href="#team" class="nav__list__links">Team</a></li>
+                <li class="nav__item__dropdown nav__list__item">
+                    <a href="#"class="nav__list__links">Pages</a>
                     <i class="fa-solid fa-caret-down"></i>
-                    <div class="dropdown">
-                        <a href="#">page1</a>
-                        <a href="#">page2</a>
-                        <a href="#">page3</a>
-                        <a href="#">page4</a>
+                    <div class="nav__dropdown">
+                        <a href="#" class="nav__dropdown__links">page1</a>
+                        <a href="#" class="nav__dropdown__links">page2</a>
+                        <a href="#" class="nav__dropdown__links">page3</a>
+                        <a href="#" class="nav__dropdown__links">page4</a>
                     </div>
                 </li>
-                <li><a href="#contact">Contact</a></li>
+                <li class="nav__list__item"><a href="#contact" class="nav__list__links">Contact</a></li>
             </ul>
-            <button type="button" id="login-btn">Get appoinment</button>
-            <div class="hamburger">
-                <div class="hamburger-top"></div>
-                <div class="hamburger-center"></div>
-                <div class="hamburger-bottom"></div>
+            <button type="button" id="login-btn" class="nav__btn">Get appoinment</button>
+            <div class="nav__hamburger">
+                <div class="nav__hamburger__top"></div>
+                <div class="nav__hamburger__center"></div>
+                <div class="nav__hamburger__bottom"></div>
             </div>
         </div>
-        <div class="mobile-menu container hidden">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#number">Number</a></li>
-                <li><a href="#price">Price</a></li>
-                <li><a href="#team">Team</a></li>
-                <li class="list-item-dropdown">
-                    <a href="#">Pages</a>
+        <div class="nav__mobileMenu container hidden">
+            <ul class="nav__mobileMenu__list">
+                <li class="nav__mobileMenu__item"><a href="index.html" class="nav__mobileMenu__links">Home</a></li>
+                <li class="nav__mobileMenu__item"><a href="#about" class="nav__mobileMenu__links">About</a></li>
+                <li class="nav__mobileMenu__item"><a href="#number" class="nav__mobileMenu__links">Number</a></li>
+                <li class="nav__mobileMenu__item"><a href="#price" class="nav__mobileMenu__links">Price</a></li>
+                <li class="nav__mobileMenu__item"><a href="#team" class="nav__mobileMenu__links">Team</a></li>
+                <li class="nav__item__dropdown nav__mobileMenu__item">
+                    <a href="#" class="nav__mobileMenu__links">Pages</a>
                     <i class="fa-solid fa-caret-down"></i>
-                    <div class="dropdown">
+                    <div class="nav__mobileMenu__dropdown">
                         <a href="#">page1</a>
                         <a href="#">page2</a>
                         <a href="#">page3</a>
                         <a href="#">page4</a>
                     </div>
                 </li>
-                <li><a href="#contact">Contact</a></li>
+                <li class="nav__mobileMenu__item"><a href="#contact" class="nav__mobileMenu__links">Contact</a></li>
             </ul>
         </div>
       </nav>
@@ -115,11 +118,11 @@
     <!---------Banner section-------->
 
       <div class="banner">
-        <h3>Washing & Detailing</h3>
-        <h1>Quality service for you</h1>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt quia debitis mollitia nostrum vel ?
+        <h3 class="banner__h3">Washing & Detailing</h3>
+        <h1 class="banner__h1">Quality service for you</h1>
+        <p class="banner__p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt quia debitis mollitia nostrum vel ?
         </p>
-        <a href="#">Explore More</a>
+        <a href="#" class="banner__link">Explore More</a>
       </div>
 
     <!---------End Banner section-------->
@@ -127,18 +130,18 @@
     <!---------About section-------->
 
         <section class="about container" id="about">
-            <div class="about-img"><img src="assets/img/about.jpg" alt="About-img"></div>
-            <div class="about-text">
+            <div class="about__img"><img src="assets/img/about.jpg" alt="About-img"></div>
+            <div class="about__text">
                 <div class="section-subtitle">About us</div>
                 <div class="section-title">Car Washing And Detailing</div>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur harum consectetur delectus dolore hic qui quidem? Molestias saepe harum praesentium?</p>
-                <ul>
-                    <li><i class="far fa-check-circle"></i>Seats washing</li>
-                    <li><i class="far fa-check-circle"></i>Vacuum Cleaning</li>
-                    <li><i class="far fa-check-circle"></i>Interior wet cleaning</li>
-                    <li><i class="far fa-check-circle"></i>Window wiping</li>
+                <p class="about__p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur harum consectetur delectus dolore hic qui quidem? Molestias saepe harum praesentium?</p>
+                <ul class="about__list">
+                    <li class="about__item"><i class="far fa-check-circle"></i>Seats washing</li>
+                    <li class="about__item"><i class="far fa-check-circle"></i>Vacuum Cleaning</li>
+                    <li class="about__item"><i class="far fa-check-circle"></i>Interior wet cleaning</li>
+                    <li class="about__item"><i class="far fa-check-circle"></i>Window wiping</li>
                 </ul>
-                <a href="#">Learn More</a>
+                <a href="#" class="about__link">Learn More</a>
             </div>
         </section>
 
@@ -146,33 +149,33 @@
     <!---------Number section-------->
 
      <section class="number" id="number">
-        <div class="number-wrapper container">
-            <article>
+        <div class="number__wrapper container">
+            <article class="number__item">
                 <i class="fa fa-map-marker-alt"></i>
-                <div class="number-text">
-                    <h3>25</h3>
-                    <p>Service Points</p>
+                <div class="number__text">
+                    <h3 class="number__h3">25</h3>
+                    <p class="number__p">Service Points</p>
                 </div>
             </article>
-            <article>
+            <article class="number__item">
                 <i class="fa fa-user"></i>
-                <div class="number-text">
-                    <h3>350</h3>
-                    <p>Engineers & Workers</p>
+                <div class="number__text">
+                    <h3 class="number__h3">350</h3>
+                    <p class="number__p">Engineers & Workers</p>
                 </div>
             </article>
-            <article>
+            <article class="number__item">
                 <i class="fa fa-users"></i>
-                <div class="number-text">
-                    <h3>1500</h3>
-                    <p>Happy Clients</p>
+                <div class="number__text">
+                    <h3 class="number__h3">1500</h3>
+                    <p class="number__p">Happy Clients</p>
                 </div>
             </article>
-            <article>
+            <article class="number__item">
                 <i class="fa fa-check"></i>
-                <div class="number-text">
-                    <h3>5000</h3>
-                    <p>Projects Completed</p>
+                <div class="number__text">
+                    <h3 class="number__h3">5000</h3>
+                    <p class="number__p">Projects Completed</p>
                 </div>
             </article>
         </div>
@@ -191,42 +194,42 @@
         <div class="section-title">
             Choose Your Plan
         </div>
-        <div class="price-wrapper container">
-          <article class="price-item">
-            <h4>Basic Cleaning</h4>
-            <p>25.99 $</p>
-            <ul>
-                <li><i class="far fa-check-circle"></i>Seats Washing</li>
-                <li><i class="far fa-check-circle"></i>Vacuum Cleaning</li>
-                <li><i class="far fa-check-circle"></i>Exterior Cleaning</li>
-                <li><i class="fa-thin fa-circle-xmark"></i>Interior Wet Cleaning</li>
-                <li><i class="fa-thin fa-circle-xmark"></i>Window Wiping</li>
+        <div class="price__wrapper container">
+          <article class="price__item">
+            <h4 class="price__h4">Basic Cleaning</h4>
+            <p class="price__p">25.99 $</p>
+            <ul class="price__list">
+                <li class="price__list__item"><i class="far fa-check-circle"></i>Seats Washing</li>
+                <li class="price__list__item"><i class="far fa-check-circle"></i>Vacuum Cleaning</li>
+                <li class="price__list__item"><i class="far fa-check-circle"></i>Exterior Cleaning</li>
+                <li class="price__list__item"><i class="fa-thin fa-circle-xmark"></i>Interior Wet Cleaning</li>
+                <li class="price__list__item"><i class="fa-thin fa-circle-xmark"></i>Window Wiping</li>
             </ul>
-            <a href="#">Book now</a>
+            <a href="#" class="price__link">Book now</a>
           </article>
-          <article class="price-item">
-            <h4>Premium Cleaning</h4>
-            <p>25.99 $</p>
-            <ul>
-                <li><i class="far fa-check-circle"></i>Seats Washing</li>
-                <li><i class="far fa-check-circle"></i>Vacuum Cleaning</li>
-                <li><i class="far fa-check-circle"></i>Exterior Cleaning</li>
-                <li><i class="fa-thin fa-circle-xmark"></i>Interior Wet Cleaning</li>
-                <li><i class="fa-thin fa-circle-xmark"></i>Window Wiping</li>
+          <article class="price__item price__item--modifier">
+            <h4 class="price__h4">Premium Cleaning</h4>
+            <p class="price__p">25.99 $</p>
+            <ul class="price__list">
+                <li class="price__list__item"><i class="far fa-check-circle"></i>Seats Washing</li>
+                <li class="price__list__item"><i class="far fa-check-circle"></i>Vacuum Cleaning</li>
+                <li class="price__list__item"><i class="far fa-check-circle"></i>Exterior Cleaning</li>
+                <li class="price__list__item"><i class="fa-thin fa-circle-xmark"></i>Interior Wet Cleaning</li>
+                <li class="price__list__item"><i class="fa-thin fa-circle-xmark"></i>Window Wiping</li>
             </ul>
-            <a href="#">Book now</a>
+            <a href="#" class="price__link">Book now</a>
           </article>
-          <article class="price-item">
-            <h4>Complex Cleaning</h4>
-            <p>25.99 $</p>
-            <ul>
-                <li><i class="far fa-check-circle"></i>Seats Washing</li>
-                <li><i class="far fa-check-circle"></i>Vacuum Cleaning</li>
-                <li><i class="far fa-check-circle"></i>Exterior Cleaning</li>
-                <li><i class="far fa-check-circle"></i>Interior Wet Cleaning</li>
-                <li><i class="far fa-check-circle"></i>Window Wiping</li>
+          <article class="price__item">
+            <h4 class="price__h4">Complex Cleaning</h4>
+            <p class="price__p">25.99 $</p>
+            <ul class="price__list">
+                <li class="price__list__item"><i class="far fa-check-circle"></i>Seats Washing</li>
+                <li class="price__list__item"><i class="far fa-check-circle"></i>Vacuum Cleaning</li>
+                <li class="price__list__item"><i class="far fa-check-circle"></i>Exterior Cleaning</li>
+                <li class="price__list__item"><i class="far fa-check-circle"></i>Interior Wet Cleaning</li>
+                <li class="price__list__item"><i class="far fa-check-circle"></i>Window Wiping</li>
             </ul>
-            <a href="#">Book now</a>
+            <a href="#" class="price__link">Book now</a>
           </article>
         </div>
       </section>
@@ -236,53 +239,53 @@
     <!---------Contact section-------->
 
      <section class="contact" id="contact">
-        <div class="contact-wrapper container">
-            <article>
+        <div class="contact__wrapper container">
+            <article class="contact__item">
                <div class="section-subtitle">Washing points</div>
                <div class="section-title">Car Washing and Care Points</div>
-               <div class="contact-info">
-                <div class="contact-info-item">
+               <div class="contact__info">
+                <div class="contact__info__item">
                    <i class="fa fa-map-marker-alt"></i>
-                   <div>
-                    <h4>Car Washing Points</h4>
-                    <p>123 Street New York, USA</p>
-                    <p><span>Call</span>: 9230948934</p>
+                   <div class="contact__data">
+                    <h4 class="contact__h4">Car Washing Points</h4>
+                    <p class="contact__p">123 Street New York, USA</p>
+                    <p class="contact__p"><span class="contact__span">Call</span>: 9230948934</p>
                    </div>
                 </div>
-                <div class="contact-info-item">
+                <div class="contact__info__item">
                     <i class="fa fa-map-marker-alt"></i>
-                    <div>
-                     <h4>Car Washing Points</h4>
-                     <p>123 Street New York, USA</p>
-                     <p><span>Call</span>: 9230948934</p>
+                    <div class="contact__data">
+                     <h4 class="contact__h4">Car Washing Points</h4>
+                     <p class="contact__p">123 Street New York, USA</p>
+                     <p class="contact__p"><span class="contact__span">Call</span>: 9230948934</p>
                     </div>
                 </div>
-                <div class="contact-info-item">
+                <div class="contact__info__item">
                     <i class="fa fa-map-marker-alt"></i>
-                   <div>
-                    <h4>Car Washing Points</h4>
-                    <p>123 Street New York, USA</p>
-                    <p><span>Call</span>: 9230948934</p>
+                   <div class="contact__data">
+                    <h4 class="contact__h4">Car Washing Points</h4>
+                    <p class="contact__p">123 Street New York, USA</p>
+                    <p class="contact__p"><span class="contact__span">Call</span>: 9230948934</p>
                    </div>
                 </div>
-                <div class="contact-info-item">
+                <div class="contact__info__item">
                     <i class="fa fa-map-marker-alt"></i>
-                    <div>
-                     <h4>Car Washing Points</h4>
-                     <p>123 Street New York, USA</p>
-                     <p><span>Call</span>: 9230948934</p>
+                    <div class="contact__data">
+                     <h4 class="contact__h4">Car Washing Points</h4>
+                     <p class="contact__p">123 Street New York, USA</p>
+                     <p class="contact__p"><span class="contact__span">Call</span>: 9230948934</p>
                     </div>
                 </div>
                </div>
                
             </article>
-            <article>
-                <form action="#" method="">
-                    <h3>Request for a car wash</h3>
-                    <input type="text" placeholder="Name" class="form-component">
-                    <input type="email" placeholder="Email" class="form-component">
-                    <textarea cols="30" rows="7" placeholder="Description" class="form-component"></textarea>
-                    <button type="submit">Send request</button>
+            <article class="contact__item">
+                <form action="#" method="" class="contact__form">
+                    <h3 class="contact__form__h3">Request for a car wash</h3>
+                    <input type="text" placeholder="Name" class=" contact__component">
+                    <input type="email" placeholder="Email" class=" contact__component">
+                    <textarea cols="30" rows="7" placeholder="Description" class=" contact__component"></textarea>
+                    <button type="submit" class="contact__btn">Send request</button>
                 </form>
             </article>
         </div>
@@ -299,64 +302,64 @@
         <div class="swiper testimonial-slider">
             
             <div class="swiper-wrapper testimonial-wrapper">
-                <div class="swiper-slide testimonial-item">
+                <div class="swiper-slide testimonial__item">
                 
-                    <img src="assets/img/testimonial-1.jpg" alt="Client-img">
+                    <img src="assets/img/testimonial-1.jpg" alt="Client-img" class="testimonial__img">
 
-                    <div class="user-info">
-                        <h4>Client Name</h4>
-                        <h5>Profesion</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Recusandae, ad iure! Ad aliquam blanditiis delectus!</p>
+                    <div class="testimonial__info">
+                        <h4 class="testimonial__h4">Client Name</h4>
+                        <h5 class="testimonial__h5">Profesion</h5>
+                        <p class="testiomonial__p">Lorem ipsum dolor sit amet consectetur adipisicing elit.Recusandae, ad iure! Ad aliquam blanditiis delectus!</p>
                     </div>
                 </div>
-                <div class="swiper-slide testimonial-item">
+                <div class="swiper-slide testimonial__item">
                     
-                    <img src="assets/img/testimonial-1.jpg" alt="">
+                    <img src="assets/img/testimonial-1.jpg" alt="" class="testimonial__img">
                 
-                    <div class="user-info">
-                        <h4>Client Name</h4>
-                        <h5>Profesion</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Recusandae, ad iure! Ad aliquam blanditiis delectus!</p>
+                    <div class="testimonial__info">
+                        <h4 class="testimonial__h4">Client Name</h4>
+                        <h5 class="testimonial__h5">Profesion</h5>
+                        <p class="testiomonial__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, ad iure! Ad aliquam blanditiis delectus!</p>
                     </div>
                 </div>
-                <div class="swiper-slide testimonial-item">
+                <div class="swiper-slide testimonial__item">
                     
-                    <img src="assets/img/testimonial-1.jpg" alt="">
+                    <img src="assets/img/testimonial-1.jpg" alt="" class="testimonial__img">
                     
-                    <div class="user-info">
-                        <h4>Client Name</h4>
-                        <h5>Profesion</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Recusandae, ad iure! Ad aliquam blanditiis delectus!</p>
+                    <div class="testimonial__info">
+                        <h4 class="testimonial__h4">Client Name</h4>
+                        <h5 class="testimonial__h5">Profesion</h5>
+                        <p class="testiomonial__p">Lorem ipsum dolor sit amet consectetur adipisicing elit.Recusandae, ad iure! Ad aliquam blanditiis delectus!</p>
                     </div>
                 </div>
-                <div class="swiper-slide testimonial-item">
+                <div class="swiper-slide testimonial__item">
                     
-                    <img src="assets/img/testimonial-1.jpg" alt="">
+                    <img src="assets/img/testimonial-1.jpg" alt="" class="testimonial__img">
                     
-                    <div class="user-info">
-                        <h4>Client Name</h4>
-                        <h5>Profesion</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Recusandae, ad iure! Ad aliquam blanditiis delectus!</p>
+                    <div class="testimonial__info">
+                        <h4 class="testimonial__h4">Client Name</h4>
+                        <h5 class="testimonial__h5">Profesion</h5>
+                        <p class="testiomonial__p">Lorem ipsum dolor sit amet consectetur adipisicing elit.Recusandae, ad iure! Ad aliquam blanditiis delectus!</p>
                     </div>
                 </div>
-                <div class="swiper-slide testimonial-item">
+                <div class="swiper-slide testimonial__item">
                     
-                    <img src="assets/img/testimonial-1.jpg" alt="">
+                    <img src="assets/img/testimonial-1.jpg" alt="" class="testimonial__img">
                     
-                    <div class="user-info">
-                        <h4>Client Name</h4>
-                        <h5>Profesion</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Recusandae, ad iure! Ad aliquam blanditiis delectus!</p>
+                    <div class="testimonial__info">
+                        <h4 class="testimonial__h4">Client Name</h4>
+                        <h5 class="testimonial__h5">Profesion</h5>
+                        <p class="testiomonial__p">Lorem ipsum dolor sit amet consectetur adipisicing elit.Recusandae, ad iure! Ad aliquam blanditiis delectus!</p>
                     </div>
                 </div>
-                <div class="swiper-slide testimonial-item">
+                <div class="swiper-slide testimonial__item">
                     
-                    <img src="assets/img/testimonial-1.jpg" alt="">
+                    <img src="assets/img/testimonial-1.jpg" alt="Testimonial-img" class="testimonial__img">
                     
-                    <div class="user-info">
-                        <h4>Client Name</h4>
-                        <h5>Profesion</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Recusandae, ad iure! Ad aliquam blanditiis delectus!</p>
+                    <div class="testimonial__info">
+                        <h4 class="testimonial__h4">Client Name</h4>
+                        <h5 class="testimonial__h5">Profesion</h5>
+                        <p class="testiomonial__p">Lorem ipsum dolor sit amet consectetur adipisicing elit.Recusandae, ad iure! Ad aliquam blanditiis delectus!</p>
                     </div>
                 </div>
             </div>
@@ -371,15 +374,15 @@
     <section class="team" id="team">
         <div class="section-subtitle">MEET OUR TEAM</div>
         <div class="section-title">Our Enginners & Workers</div>
-        <div class="team-wrapper container">
-            <article>
-                <div class="team-img">
+        <div class="team__wrapper container">
+            <article class="team__item">
+                <div class="team__img">
                     <img src="assets/img/team-4.jpg" alt="img-team">
                 </div>
-                <div class="team-info">
-                    <h4>Donald John</h4>
-                    <p>Enginner</p>
-                    <div class="team-social">
+                <div class="team__info">
+                    <h4 class="team__h4">Donald John</h4>
+                    <p class="team__p">Enginner</p>
+                    <div class="team__social">
                         <a href="#" class="fab fa-twitter"></a>
                         <a href="#" class="fab fa-facebook-f"></a>
                         <a href="#" class="fab fa-linkedin-in"></a>
@@ -387,14 +390,14 @@
                     </div>
                 </div>
             </article>
-            <article>
-                <div class="team-img">
+            <article class="team__item">
+                <div class="team__img">
                     <img src="assets/img/team-1.jpg" alt="img-team">
                 </div>
-                <div class="team-info">
-                    <h4>Adam Philips</h4>
-                    <p>Enginner</p>
-                    <div class="team-social">
+                <div class="team__info">
+                    <h4 class="team__h4">Adam Philips</h4>
+                    <p class="team__p">Enginner</p>
+                    <div class="team__social">
                         <a href="#" class="fab fa-twitter"></a>
                         <a href="#" class="fab fa-facebook-f"></a>
                         <a href="#" class="fab fa-linkedin-in"></a>
@@ -402,14 +405,14 @@
                     </div>
                 </div>
             </article>
-            <article>
-                <div class="team-img">
+            <article class="team__item">
+                <div class="team__img">
                     <img src="assets/img/team-2.jpg" alt="img-team">
                 </div>
-                <div class="team-info">
-                    <h4>Thomas Olsen</h4>
-                    <p>Worker</p>
-                    <div class="team-social">
+                <div class="team__info">
+                    <h4 class="team__h4">Thomas Olsen</h4>
+                    <p class="team__p">Worker</p>
+                    <div class="team__social">
                         <a href="#" class="fab fa-twitter"></a>
                         <a href="#" class="fab fa-facebook-f"></a>
                         <a href="#" class="fab fa-linkedin-in"></a>
@@ -417,14 +420,14 @@
                     </div>
                 </div>
             </article>
-            <article>
-                <div class="team-img">
+            <article class="team__item">
+                <div class="team__img">
                     <img src="assets/img/team-3.jpg" alt="img-team">
                 </div>
-                <div class="team-info">
-                    <h4>James Alien</h4>
-                    <p>Worker</p>
-                    <div class="team-social">
+                <div class="team__info">
+                    <h4 class="team__h4">James Alien</h4>
+                    <p class="team__p">Worker</p>
+                    <div class="team__social">
                         <a href="#" class="fab fa-twitter"></a>
                         <a href="#" class="fab fa-facebook-f"></a>
                         <a href="#" class="fab fa-linkedin-in"></a>
@@ -440,24 +443,24 @@
     <!-----------Footer-------------->
 
       <footer>
-        <div class="footer-wrapper container">
-            <article>
-                <h4>Get In Touch</h4>
-                <ul>
-                    <li><i class="fa fa-map-marker-alt"></i>123 Street, New York USA</li>
-                    <li><i class="fa fa-phone-alt"></i>+083 923331</li>
-                    <li><i class="fa fa-envelope"></i>info@example.com</li>
+        <div class="footer__wrapper container">
+            <article class="footer__item">
+                <h4 class="footer__h4">Get In Touch</h4>
+                <ul class="footer__list">
+                    <li class="footer__list__item"><i class="fa fa-map-marker-alt"></i>123 Street, New York USA</li>
+                    <li class="footer__list__item"><i class="fa fa-phone-alt"></i>+083 923331</li>
+                    <li class="footer__list__item"><i class="fa fa-envelope"></i>info@example.com</li>
                 </ul>
-                <div class="footer-social">
+                <div class="footer__socialMedia">
                    <a href="#" class="fab fa-twitter"></a>
                    <a href="#" class="fab fa-facebook-f"></a>
                    <a href="#" class="fab fa-linkedin-in"></a>
                    <a href="#" class="fab fa-instagram"></a>
                 </div>
             </article>
-            <article>
-                <h4>Popular Links</h4>
-                <div class="footer-links">
+            <article class="footer__item">
+                <h4 class="footer__h4">Popular Links</h4>
+                <div class="footer__links">
                     <a href="#"><i class="fas fa-arrow-right"></i>About Us</a>
                     <a href="#"><i class="fas fa-arrow-right"></i>Contact Us</a>
                     <a href="#"><i class="fas fa-arrow-right"></i>Our Service</a>
@@ -465,9 +468,9 @@
                     <a href="#"><i class="fas fa-arrow-right"></i>Pricing Plans</a>
                 </div>
             </article>
-            <article>
-                <h4>Useful Links</h4>
-                <div class="footer-links">
+            <article class="footer__item">
+                <h4 class="footer__h4">Useful Links</h4>
+                <div class="footer__links">
                     <a href="#"><i class="fas fa-arrow-right"></i>Terms of use</a>
                     <a href="#"><i class="fas fa-arrow-right"></i>Privacy policy</a>
                     <a href="#"><i class="fas fa-arrow-right"></i>Cookies</a>
@@ -475,17 +478,17 @@
                     <a href="#"><i class="fas fa-arrow-right"></i>FAQs</a>
                 </div>
             </article>
-            <article>
-                <h4>Newsletter</h4>
-                <form action="" method="">
-                    <input type="text" placeholder="Your Name" class="footer-input">
-                    <input type="email" placeholder="Email" class="footer-input">
-                    <input type="submit" value="Submit">
+            <article class="footer__item">
+                <h4 class="footer__h4">Newsletter</h4>
+                <form action="" method="" class="footer__form">
+                    <input type="text" placeholder="Your Name" class="footer__input">
+                    <input type="email" placeholder="Email" class="footer__input">
+                    <input type="submit" value="Submit" class="footer__button">
                 </form>
             </article>
         </div>
-        <div class="footer-bottom">
-            &copy;<span>Autowash, </span>All Right Reserved. Design By <span>Toni Sabljic</span>
+        <div class="footer__bottom">
+            &copy;<span class="footer__span">Autowash, </span>All Right Reserved. Design By <span class="footer__span">Toni Sabljic</span>
         </div>
       </footer>
 
@@ -494,22 +497,22 @@
     <!------------Modal Section-------->
 
      <div class="modal">
-        <div class="modal-box">
-            <div class="modal-title">
-                <h3>Login</h3>
+        <div class="modal__box">
+            <div class="modal__title">
+                <h3 class="modal__h3">Login</h3>
                 <i class="fa-solid fa-xmark" id="close-modal"></i>
             </div>
-            <div class="modal-body">
-                <form action="" method="">
-                   <label for="name">Username</label>
-                   <input type="text" id="name" class="modal-input">
-                   <label for="pass">Password</label>
-                   <input type="text" id="pass" class="modal-input">
-                   <input type="submit" value="Login">
+            <div class="modal__body">
+                <form action="" method="" class="modal__form">
+                   <label for="name" class="modal__label">Username</label>
+                   <input type="text" id="name" class="modal__input">
+                   <label for="pass" class="modal__label">Password</label>
+                   <input type="text" id="pass" class="modal__input">
+                   <input type="submit" value="Login" class="modal__button">
                 </form>
             </div>
-            <div class="modal-footer">
-                <p>Dont have an acount <a href="#">Register Now</a></p>
+            <div class="modal__footer">
+                <p class="modal__footer__p">Dont have an acount <a href="#" class="modal__footer__link">Register Now</a></p>
             </div>
         </div>
      </div>
