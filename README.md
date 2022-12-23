@@ -2,8 +2,9 @@
  AutoWash  is a template and describes about company which works Washing & Detailing cars,
   also describes
 how many happy clients has and what they say about company, show washing points and service, describes more about team and wrokers.
-On the AutoWash website you can also find plan for washing and price about it, contact and information with team and subscribe for newsletter.
+On the AutoWash website you can also find plan for washing and price about it, contact and information with team and subscribe for newsletter. 
 AutoWash website is also in the media **Facebook**, **Instagram**, **Twiter** and **LinkedIn**.
+The website is responsive for small screens.
 
 ##Built with
 
@@ -47,11 +48,11 @@ AutoWash website is also in the media **Facebook**, **Instagram**, **Twiter** an
 * Main.js
 
 
-**Design by Toni Sabljic**
-
 ## Contact
 
 * [GitHub Pages](https://github.com/T-sabljic)
 * [Website Page](https://t-sabljic.github.io/Auto-Wash-project/)
 * [Email](https://toni.majkic@gmail.com)
+
+**Design by Toni Sabljic**
 
